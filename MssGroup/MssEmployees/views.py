@@ -50,8 +50,13 @@ def Register(request):
 def homePage(request):
     return render(request, r'MssEmp\\index.html')
 
+def layout_default(request):
+    return render(request,r"MssEmp\layout_default.html")
+def layout_top(request):
+    return render(request,r"MssEmp\layout_top_navigation.html")
 
-
+def blank_pages(request):
+    return render(request, r"MssEmp\blank-pages.html")
 
 # def Register(request):
 #     if request.method == 'post':
